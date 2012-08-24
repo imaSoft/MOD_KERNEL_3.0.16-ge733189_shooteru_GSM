@@ -1,0 +1,6 @@
+‘айлы начальной конфигурации компил€ции €дра хрон€тьс€ в arch/arm/config/ и дл€ шутера это shooter_u_defconfig
+  и в кастомах некоторые его записывают как shooter_defconfig
+
+ѕапку include/config после компил€ции можно спокойно удал€ть она не нужна!
+
+Disable_GENTLTE_FAIR_SLEEPERS_for_better_performance_on_Android(¬инмание_большей_жер_баты)
