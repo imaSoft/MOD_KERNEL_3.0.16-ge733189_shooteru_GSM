@@ -1,0 +1,153 @@
+***START_Patch_Thermal_Managment***
+patching file arch/arm/configs/shooter_u_defconfig
+patching file arch/arm/mach-msm/board-shooter_u.c
+patching file config
+patching file drivers/thermal/Kconfig
+patching file drivers/thermal/Makefile
+patching file drivers/thermal/msm8x60_tsens.c
+patching file drivers/thermal/msm_thermal.c
+patching file include/linux/msm_tsens.h
+***END_Patch_Thermal_Managment***
+
+***START_Patch_Governor***
+patching file arch/arm/configs/shooter_u_defconfig
+patching file config
+patching file drivers/cpufreq/cpufreq_intellidemand.c
+patching file drivers/cpufreq/cpufreq_lazy.c
+patching file drivers/cpufreq/cpufreq_scary.c
+patching file drivers/cpufreq/cpufreq_smartass2.c
+patching file drivers/cpufreq/cpufreq_wheatley.c
+patching file drivers/cpufreq/Kconfig
+patching file drivers/cpufreq/Makefile
+patching file include/linux/cpufreq.h
+***END_Patch_Governor***
+
+***START_Patch_file_Fsync-Added***
+patching file config
+Hunk #1 succeeded at 1187 (offset 10 lines).
+patching file drivers/misc/Kconfig
+patching file drivers/misc/Makefile
+patching file drivers/misc/fsync_control.c
+patching file fs/sync.c
+***END_Patch_file_Fsync-Added***
+
+***START_Patch_file_Sign-Rmoved***
+patching file scripts/setlocalversion
+***END_Patch_file_Sign-Rmoved***
+
+***START_Patch_file_Genlock-don-t-spam-our-log.-Thx***
+patching file drivers/base/genlock.c
+***END_Patch_file_Genlock-don-t-spam-our-log.-Thx***
+
+***START_Patch_file_lib-string-use-glibc-version***
+patching file lib/string.c
+***END_Patch_file_lib-string-use-glibc-version***
+
+***START_Patch_file_lib-memcopy-use-glibc-version***
+patching file include/linux/memcopy.h
+patching file lib/Makefile
+patching file lib/memcopy.c
+***END_Patch_file_lib-memcopy-use-glibc-version***
+
+***START_Patch_file_Glitch-Free-GPU-Frequency-Changing***
+patching file drivers/gpu/msm_adreno220/kgsl_pwrctrl.c
+***END_Patch_file_Glitch-Free-GPU-Frequency-Changing***
+
+***START_Patch_file_main***
+patching file arch/arm/configs/shooter_u_defconfig
+patching file arch/arm/mach-msm/acpuclock-8x60.c
+patching file arch/arm/mach-msm/avs.h
+patching file arch/arm/mach-msm/board-shooter_u.c
+Hunk #1 succeeded at 429 (offset 1 line).
+Hunk #2 succeeded at 455 (offset 1 line).
+Hunk #3 succeeded at 466 (offset 1 line).
+Hunk #4 succeeded at 1789 (offset 1 line).
+Hunk #5 succeeded at 2839 (offset 1 line).
+Hunk #6 succeeded at 3419 (offset 3 lines).
+patching file arch/arm/mach-msm/clock-8x60.c
+patching file arch/arm/mach-msm/cpufreq.c
+patching file arch/arm/mach-msm/devices-msm8x60.c
+patching file arch/arm/mach-msm/fastchg.c
+patching file arch/arm/mach-msm/htc_battery_8x60.c
+patching file arch/arm/mach-msm/htc_battery_core.c
+patching file arch/arm/mach-msm/Kconfig
+patching file arch/arm/mach-msm/Makefile
+patching file config
+Hunk #6 succeeded at 1317 (offset 11 lines).
+Hunk #7 succeeded at 2710 (offset 12 lines).
+patching file drivers/cpufreq/cpufreq.c
+patching file drivers/input/misc/gpio_event.c
+patching file drivers/input/touchscreen/atmel.c
+patching file drivers/input/touchscreen/Kconfig
+patching file drivers/leds/leds-pm8058.c
+patching file drivers/net/wireless/bcm4329_248/wl_iw.h
+patching file drivers/staging/msm/msm_fb.c
+patching file drivers/usb/otg/msm_otg.c
+patching file drivers/video/msm_8x60/mipi_novatek_cmd_qhd_pt.c
+patching file drivers/video/msm_8x60/mipi_orise_cmd_qhd_pt.c
+patching file drivers/video/msm_8x60/msm_fb.c
+patching file include/linux/atmel_qt602240.h
+patching file include/linux/fastchg.h
+patching file include/linux/leds-pm8058.h
+patching file kernel/sched_features.h
+patching file Makefile
+patching file mm/page-writeback.c
+patching file mm/vmscan.c
+***END_Patch_file_main***
+
+***START_Patch_file_Sweep2Wake-Fix-Menu-Back-Search-no-Home-Button***
+patching file drivers/input/touchscreen/atmel.c
+Hunk #1 succeeded at 1319 (offset -1 lines).
+Hunk #2 succeeded at 1330 (offset -1 lines).
+Hunk #3 succeeded at 1366 (offset -1 lines).
+***END_Patch_file_Sweep2Wake-Fix-Menu-Back-Search-no-Home-Button***
+
+***START_Patch_file_xt_socket.c-Fix***
+patching file net/netfilter/xt_socket.c
+***END_Patch_file_xt_socket.c-Fix***
+
+***START_Patch_file_netfilter-xt_log.h-fix-warning-value-computed-is-not***
+patching file include/net/netfilter/xt_log.h
+***END_Patch_file_netfilter-xt_log.h-fix-warning-value-computed-is-not***
+
+***START_Patch_file_linaro-fixes***
+patching file config
+Hunk #3 succeeded at 372 (offset 1 line).
+Hunk #4 succeeded at 598 (offset 4 lines).
+Hunk #5 succeeded at 1222 (offset 16 lines).
+Hunk #6 succeeded at 1295 (offset 16 lines).
+Hunk #7 succeeded at 1389 (offset 20 lines).
+Hunk #8 succeeded at 1918 (offset 21 lines).
+Hunk #9 succeeded at 1946 (offset 21 lines).
+Hunk #10 succeeded at 2083 (offset 21 lines).
+Hunk #11 succeeded at 2331 (offset 21 lines).
+Hunk #12 succeeded at 2888 (offset 21 lines).
+patching file Makefile
+patching file arch/arm/include/asm/rwsem.h
+patching file arch/arm/mach-msm/include/mach/restart.h
+patching file arch/arm/mach-msm/scm.c
+patching file drivers/md/dm-table.c
+patching file drivers/md/dm.c
+patching file drivers/net/wireless/bcm4329_248/wl_iw.c
+patching file drivers/usb/gadget/f_projector.c
+patching file include/linux/rcupdate.h
+patching file net/ipv4/netfilter/nf_nat_amanda.c
+patching file net/ipv4/netfilter/nf_nat_core.c
+patching file net/ipv4/netfilter/nf_nat_ftp.c
+patching file net/ipv4/netfilter/nf_nat_h323.c
+patching file net/ipv4/netfilter/nf_nat_irc.c
+patching file net/ipv4/netfilter/nf_nat_pptp.c
+patching file net/ipv4/netfilter/nf_nat_sip.c
+patching file net/ipv4/netfilter/nf_nat_standalone.c
+patching file net/ipv4/netfilter/nf_nat_tftp.c
+patching file net/netfilter/nf_conntrack_core.c
+patching file net/netfilter/nf_conntrack_proto.c
+patching file net/netfilter/xt_qtaguid.c
+patching file net/sched/sch_generic.c
+***END_Patch_file_linaro-fixes***
+
+***START_Patch_file_Linaro-Fix-Optimization***
+patching file arch/arm/boot/compressed/Makefile
+patching file arch/arm/mach-msm/idle-v7.S
+***END_Patch_file_Linaro-Fix-Optimization***
+
